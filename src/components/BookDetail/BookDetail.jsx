@@ -12,7 +12,7 @@ const BookDetail = () => {
 
     // console.log(data, book, bookId, id)
 
-    const {bookId: currentBookId, image, bookName,  author, tags, category, review, yearOfPublishing, totalPages, publisher} = book;
+    const {bookId: currentBookId, image, bookName,  author, tags, category, review, yearOfPublishing, totalPages, publisher, rating} = book;
 
     const handleMarkAsRead = (id) =>{
         /* 
@@ -47,6 +47,7 @@ const BookDetail = () => {
             <p className='mb-2'>Number of Pages: {totalPages}</p>
             <p className='mb-2'>Publisher: {publisher}</p>
             <p className='mb-2'>Year of Publishing: {yearOfPublishing}</p>
+            <p className='mb-2'>Rating: {rating}</p>
 
 
         </div>
