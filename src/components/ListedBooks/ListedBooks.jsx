@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { getStoredReadList } from '../../utility/addToDb';
 import Book from '../Book/Book';
+import { Helmet } from 'react-helmet-async';
 
 const ListedBooks = () => {
     const [readList, setReadList] = useState([]);
@@ -37,6 +38,9 @@ const ListedBooks = () => {
 
     return (
         <div>
+          <Helmet>
+            <title>Boi Poka | Listed Books</title>
+          </Helmet>
             <h3 className="text-3xl my-8">Listed Books</h3>
 
             <div className="dropdown">
